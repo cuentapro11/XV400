@@ -220,7 +220,7 @@ function updateMusicIcon() {
             volumeIcon.innerHTML = `
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="#222" stroke="#fff" stroke-width="1"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.08" stroke="#222" stroke-width="2"></path>
-                <circle cx="6.5" cy="12" r="1" fill="#ffe27a"/>
+                <circle cx="6.5" cy="12" r="1" fill="#D98FA3"/>
             `;
         } else {
             volumeIcon.innerHTML = `

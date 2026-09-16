@@ -1,20 +1,20 @@
 /* Variables CSS */
 :root {
-    --background: 43 100% 99%; /* #FFFDF8 - blanco crema principal */
-    --foreground: 32 15% 20%; /* #3B342C - texto principal oscuro */
-    --primary: 32 15% 20%;
-    --primary-foreground: 43 100% 99%;
-    --gold: 42 50% 58%; /* #C9A85D - dorado champagne */
-    --gold-light: 45 49% 73%; /* #DCCB9A - dorado claro */
-    --gold-dark: 40 45% 46%; /* tono dorado más oscuro para contraste */
-    --brown: 78 19% 38%; /* #68734F - verde oliva (reemplaza el marrón) */
-    --brown-light: 78 16% 52%;
-    --brown-dark: 32 15% 20%; /* #3B342C - texto principal oscuro */
-    --cream: 41 53% 94%; /* #F8F3E8 - blanco cálido secundario */
-    --warm-white: 43 100% 99%; /* #FFFDF8 */
-    --sunflower: 45 90% 57%; /* #F4C430 - amarillo girasol, solo para girasoles */
-    --shadow-elegant: 0 10px 30px -10px hsl(32 15% 20% / 0.15);
-    --shadow-gold: 0 4px 20px hsl(42 50% 58% / 0.35);
+    --background: 32 100% 97%; /* #FFF9F2 - crema principal */
+    --foreground: 351 12% 33%; /* #5E4A4D - café rosado, texto principal */
+    --primary: 351 12% 33%;
+    --primary-foreground: 32 100% 97%;
+    --gold: 344 30% 52%; /* #A95F73 - rosa oscuro/malva, acento principal */
+    --gold-light: 344 49% 71%; /* #D98FA3 - rosa malva claro, detalles secundarios */
+    --gold-dark: 344 30% 52%; /* #A95F73 - rosa oscuro, para títulos */
+    --brown: 88 12% 60%; /* #9AA58D - verde salvia */
+    --brown-light: 88 12% 70%;
+    --brown-dark: 351 12% 33%; /* #5E4A4D - café rosado, texto principal */
+    --cream: 344 62% 93%; /* #F8E1E7 - rosa claro secundario */
+    --warm-white: 32 100% 97%; /* #FFF9F2 */
+    --blush: 344 49% 71%; /* #D98FA3 - rosa malva claro */
+    --shadow-elegant: 0 10px 30px -10px hsl(351 12% 33% / 0.15);
+    --shadow-gold: 0 4px 20px hsl(344 30% 52% / 0.35);
 }
 
 /* Reset y base */
@@ -47,13 +47,13 @@ html, body {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #FFFDF8; /* blanco crema principal */
+    background-color: #FFF9F2; /* blanco crema principal */
     color: hsl(var(--foreground));
     line-height: 1.6;
     box-sizing: border-box;
 }
 
-html { background-color: #FFFDF8; }
+html { background-color: #FFF9F2; }
 
 /* Tipografía */
 .names {
@@ -70,7 +70,7 @@ html { background-color: #FFFDF8; }
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-size: clamp(0.95rem, 2.2vw, 1.3rem);
-    color: #C9A85D;
+    color: #A95F73;
     margin-top: 0.35rem;
 }
 
@@ -92,7 +92,7 @@ html { background-color: #FFFDF8; }
 /* Nuevo diseño de bienvenida tipo portada */
 .welcome-hero {
     text-align: center;
-    color: #DCCB9A;
+    color: #D98FA3;
     max-width: 900px;
     padding: 2rem;
 }
@@ -102,7 +102,7 @@ html { background-color: #FFFDF8; }
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: 0.5px;
-    color: #DCCB9A; /* dorado claro para contraste sobre fondo oscuro */
+    color: #D98FA3; /* dorado claro para contraste sobre fondo oscuro */
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     margin-bottom: 1rem;
 }
@@ -116,7 +116,7 @@ html { background-color: #FFFDF8; }
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 400;
-    color: #DCCB9A;
+    color: #D98FA3;
     font-size: clamp(0.95rem, 1.6vw, 1.15rem);
     line-height: 1.7;
     letter-spacing: 0.3px;
@@ -134,7 +134,7 @@ html { background-color: #FFFDF8; }
     transform: translateX(-50%);
     width: 60px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #DCCB9A, transparent);
+    background: linear-gradient(90deg, transparent, #D98FA3, transparent);
 }
 
 .welcome-note {
@@ -150,30 +150,30 @@ html { background-color: #FFFDF8; }
 }
 
 .btn-gold {
-    background-color: #C9A85D;
+    background-color: #A95F73;
     color: #fff;
-    border: 2px solid #DCCB9A;
+    border: 2px solid #D98FA3;
     border-radius: 9999px;
     padding: 0.65rem 1.1rem;
     cursor: pointer;
     transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
     font-weight: 600;
-    box-shadow: 0 6px 20px rgba(201, 168, 93, 0.35);
+    box-shadow: 0 6px 20px rgba(169, 95, 115, 0.35);
 }
 
 .btn-gold:hover { transform: translateY(-1px); }
 
 .btn-gold-outline {
     background: transparent;
-    color: #DCCB9A;
-    border: 1px solid #DCCB9A;
+    color: #D98FA3;
+    border: 1px solid #D98FA3;
     border-radius: 9999px;
     padding: 0.65rem 1.1rem;
     cursor: pointer;
     transition: background-color .2s ease, color .2s ease;
 }
 
-.btn-gold-outline:hover { background-color: rgba(220,203,154,0.15); }
+.btn-gold-outline:hover { background-color: rgba(217,143,163,0.18); }
 
 .modal-title {
     font-size: 1.6rem;
@@ -294,7 +294,7 @@ html { background-color: #FFFDF8; }
     background: none;
 }
 
-/* Ramo de girasoles decorativo: arriba de todo, parcialmente
+/* Ramo floral decorativo: arriba de todo, parcialmente
    recortado por el borde superior de la ventana */
 .top-garland {
     position: absolute;
@@ -446,7 +446,7 @@ html { background-color: #FFFDF8; }
 
 .gallery-section,
 .gifts-section {
-    background-color: #FFFDF8;
+    background-color: #FFF9F2;
     box-shadow: 0 8px 24px -8px rgba(0,0,0,0.08);
 }
 
@@ -457,7 +457,7 @@ html { background-color: #FFFDF8; }
 /* Countdown */
 .countdown-section {
     text-align: center;
-    background-color: #FFFDF8;
+    background-color: #FFF9F2;
     box-shadow: 0 8px 24px -8px rgba(0,0,0,0.08);
     padding: 2.5rem 1rem; /* menos alto que el resto de secciones */
 }
@@ -465,7 +465,7 @@ html { background-color: #FFFDF8; }
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #C9A85D;
+    color: #A95F73;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -493,20 +493,20 @@ html { background-color: #FFFDF8; }
     transform: translateY(-50%);
     width: 1px;
     height: 80%;
-    background-color: #DCCB9A;
+    background-color: #D98FA3;
 }
 
 .countdown-number {
     font-size: clamp(1.2rem, 4vw, 2rem);
     font-weight: 700;
-    color: #C9A85D;
+    color: #A95F73;
     margin-bottom: 0.1rem;
     animation: flip-in 0.6s ease-out;
 }
 
 .countdown-label {
     font-size: clamp(0.5rem, 1.8vw, 0.7rem);
-    color: #3B342C;
+    color: #5E4A4D;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -554,21 +554,21 @@ html { background-color: #FFFDF8; }
 .event-title {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #C9A85D !important;
+    color: #A95F73 !important;
     margin-bottom: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-shadow: none;
 }
 
-/* Separadores dorado claro arriba y abajo de los títulos de evento */
+/* Separadores rosa claro arriba y abajo de los títulos de evento */
 .event-title { position: relative; padding: 0.75rem 0; }
 .event-title::before,
 .event-title::after {
     content: "";
     position: absolute;
     left: 10%; right: 10%;
-    height: 1px; background: #DCCB9A;
+    height: 1px; background: #D98FA3;
 }
 .event-title::before { top: 0; }
 .event-title::after { bottom: 0; }
@@ -580,19 +580,19 @@ html { background-color: #FFFDF8; }
 .event-details h4 {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #3B342C;
+    color: #5E4A4D;
     margin-bottom: 0.5rem;
 }
 
 .event-details p {
-    color: #3B342C;
+    color: #5E4A4D;
 }
 
 .event-punctuality {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 0.92rem;
-    color: #68734F !important;
+    color: #9AA58D !important;
     letter-spacing: 0.3px;
     margin-top: 0.35rem;
 }
@@ -617,7 +617,7 @@ html { background-color: #FFFDF8; }
     padding: 0.75rem 2rem;
     border-radius: 9999px;
     border: none;
-    background: #C9A85D;
+    background: #A95F73;
     color: #FFFFFF;
     font-weight: 500;
     cursor: pointer;
@@ -627,7 +627,7 @@ html { background-color: #FFFDF8; }
 }
 
 .btn-wedding:hover {
-    box-shadow: 0 4px 20px rgba(201, 168, 93, 0.4);
+    box-shadow: 0 4px 20px rgba(169, 95, 115, 0.4);
 }
 
 /* Modern & Elegant Buttons and Icons */
@@ -639,11 +639,11 @@ html { background-color: #FFFDF8; }
 .gifts-container button,
 .rsvp-container button {
     border-radius: 9999px !important;
-    background: linear-gradient(90deg, #C9A85D 0%, #DCCB9A 100%) !important;
+    background: linear-gradient(90deg, #A95F73 0%, #D98FA3 100%) !important;
     color: #FFFFFF !important;
     font-weight: 600;
     font-size: 1.1rem;
-    box-shadow: 0 4px 18px -6px rgba(201, 168, 93, 0.35);
+    box-shadow: 0 4px 18px -6px rgba(169, 95, 115, 0.35);
     border: none;
     transition: box-shadow 0.2s, transform 0.2s;
     outline: none;
@@ -660,7 +660,7 @@ html { background-color: #FFFDF8; }
 .party-card button:hover,
 .gifts-container button:hover,
 .rsvp-container button:hover {
-    box-shadow: 0 8px 32px -8px rgba(201, 168, 93, 0.55);
+    box-shadow: 0 8px 32px -8px rgba(169, 95, 115, 0.55);
     transform: translateY(-2px) scale(1.03);
 }
 
@@ -734,7 +734,7 @@ html { background-color: #FFFDF8; }
 
 /* Mismo ajuste para el ícono de WhatsApp y el botón de "Confirmar Asistencia":
    sin esto, otra regla más arriba (.whatsapp-icon dentro de "Modern & Elegant
-   Icons") le quitaba el círculo dorado con !important y quedaba descolocado
+   Icons") le quitaba el círculo de acento con !important y quedaba descolocado
    respecto al resto de íconos del sitio (evento, regalo, etc.). */
 .rsvp-container {
     display: flex !important;
@@ -778,14 +778,14 @@ html { background-color: #FFFDF8; }
 .party-icon svg,
 .gift-icon svg,
 .whatsapp-icon svg {
-    color: #C9A85D !important;
-    fill: #C9A85D !important;
+    color: #A95F73 !important;
+    fill: #A95F73 !important;
 }
 
 /* Icono de código de vestimenta: verde oliva (sección de información adicional) */
 .bowtie-icon svg {
-    color: #68734F !important;
-    fill: #68734F !important;
+    color: #9AA58D !important;
+    fill: #9AA58D !important;
 }
 
 .event-icon:hover,
@@ -793,7 +793,7 @@ html { background-color: #FFFDF8; }
 .party-icon:hover,
 .gift-icon:hover,
 .whatsapp-icon:hover {
-    box-shadow: 0 8px 32px -8px #ffe27a88;
+    box-shadow: 0 8px 32px -8px #D98FA388;
     transform: scale(1.05);
 }
 
@@ -830,9 +830,9 @@ html { background-color: #FFFDF8; }
 .hero-text .names::after {
     content: ""; position: absolute; left: 5%; right: 5%; bottom: 0; height: 0.5px; background: #fff;
 }
-/* Ampersand dorado (no usado en la portada de XV, se deja por compatibilidad) */
-.hero-text .ampersand { color: #C9A85D; }
-/* Decorative gold quotes above and below */
+/* Ampersand en acento (no usado en la portada de XV, se deja por compatibilidad) */
+.hero-text .ampersand { color: #A95F73; }
+/* Decorative accent quotes above and below */
 .quote { 
     position: relative; 
     margin-top: 1.5rem;
@@ -840,7 +840,7 @@ html { background-color: #FFFDF8; }
     font-weight: 400;
 }
 .quote::before, .quote::after {
-    position: absolute; left: 50%; transform: translateX(-50%); color: #C9A85D; font-family: 'Playfair Display', serif;
+    position: absolute; left: 50%; transform: translateX(-50%); color: #A95F73; font-family: 'Playfair Display', serif;
 }
 .quote::before { content: "“"; top: -1.5rem; font-size: 2rem; }
 .quote::after { content: "”"; bottom: -2.5rem; font-size: 2rem; }
@@ -851,16 +851,16 @@ html { background-color: #FFFDF8; }
     height: 100%;
     object-fit: cover;
     box-sizing: border-box;
-    background: #C9A85D;
-    border: 10px solid #C9A85D; /* dorado champagne */
+    background: #A95F73;
+    border: 10px solid #A95F73; /* dorado champagne */
     border-bottom-width: 38px; /* pie polaroid */
     border-radius: 4px;
-    box-shadow: 0 10px 24px rgba(201,168,93,0.35);
+    box-shadow: 0 10px 24px rgba(169,95,115,0.35);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .section-subtitle {
-    color: #3B342C;
+    color: #5E4A4D;
     margin-bottom: 3rem;
 }
 
@@ -1062,12 +1062,12 @@ html { background-color: #FFFDF8; }
 .party-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #C9A85D;
+    color: #A95F73;
     margin-bottom: 1rem;
 }
 
 .party-card p {
-    color: #3B342C;
+    color: #5E4A4D;
     margin-bottom: 1.5rem;
 }
 
@@ -1114,14 +1114,14 @@ html { background-color: #FFFDF8; }
 .hashtag {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3B342C;
+    color: #5E4A4D;
     margin-bottom: 2rem;
 }
 
 /* Footer */
 .footer {
-    background-color: #F8F3E8; /* blanco cálido secundario */
-    color: #3B342C;
+    background-color: #F8E1E7; /* blanco cálido secundario */
+    color: #5E4A4D;
     padding: 2rem 1rem;
     text-align: center;
     width: 100%;
@@ -1160,7 +1160,7 @@ html { background-color: #FFFDF8; }
 .modal-title-dark {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
-    color: #C9A85D;
+    color: #A95F73;
     margin-bottom: 1rem;
 }
 
@@ -1187,7 +1187,7 @@ html { background-color: #FFFDF8; }
 }
 
 .modal-close:hover {
-    color: #C9A85D;
+    color: #A95F73;
 }
 
 /* Toast */
@@ -1511,24 +1511,24 @@ html { background-color: #FFFDF8; }
     color: #fff !important;
 }
 
-/* Footer sobre fondo crema: nombre en dorado, texto en tono oscuro principal */
+/* Footer sobre fondo crema: nombre en rosa oscuro, texto en tono oscuro principal */
 .footer-content p {
-    color: #3B342C !important;
+    color: #5E4A4D !important;
 }
 .footer-content h3 {
-    color: #C9A85D !important;
+    color: #A95F73 !important;
 }
 .footer-date {
-    color: #DCCB9A !important;
+    color: #D98FA3 !important;
 }
 
 /* Textos sobre las secciones en tono oscuro principal para contraste */
 .event-details h4,
 .hashtag {
-    color: #3B342C !important;
+    color: #5E4A4D !important;
 }
 .party-card h3 {
-    color: #C9A85D !important;
+    color: #A95F73 !important;
 }
 
 /* Show carousel navigation buttons */
@@ -1582,7 +1582,7 @@ button[class*="carousel"] {
     .framed-photo { margin: 16px auto 24px; max-width: calc(100% - 32px); }
 }
 
-.framed-photo:hover { box-shadow: 0 15px 30px rgba(201,168,93,0.35); }
+.framed-photo:hover { box-shadow: 0 15px 30px rgba(169,95,115,0.35); }
 
 
 
@@ -1591,7 +1591,7 @@ button[class*="carousel"] {
     .carousel-item.is-center { z-index: 2; }
     .carousel-item.is-center .framed-photo {
         transform: scale(1.12) rotate(-0.2deg);
-        box-shadow: 0 34px 68px rgba(201,168,93,0.45);
+        box-shadow: 0 34px 68px rgba(169,95,115,0.45);
     }
 }
 
@@ -1620,12 +1620,12 @@ button[class*="carousel"] {
 .gallery-section,
 .gifts-section,
 .rsvp-section {
-    background-color: #FFFDF8 !important;
+    background-color: #FFF9F2 !important;
 }
 
 .events-section,
 .party-section {
-    background-color: #F8F3E8 !important;
+    background-color: #F8E1E7 !important;
 }
 
 /* Portada (desktop): usar imagen por defecto y altura de la sección base */
