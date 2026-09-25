@@ -401,8 +401,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function openLocation(location) {
     // Enlaces de ejemplo (dirección ficticia) - ceremonia y celebración
     const mapsUrls = {
-        ceremony: "https://maps.google.com/maps?q=Calle+Principal+123,+Sector+Ejemplo,+Santo+Domingo&z=17&hl=es",
-        reception: "https://maps.google.com/maps?q=Av+Modelo+456,+Sector+Ejemplo,+Santo+Domingo&z=17&hl=es"
+        ceremony: "https://maps.app.goo.gl/jGF4dqpyfrakbxSTA",
+        reception: "https://maps.app.goo.gl/jGF4dqpyfrakbxSTA"
     };
     const mapsUrl = mapsUrls[location] || mapsUrls.ceremony;
     window.open(mapsUrl, '_blank');
@@ -414,8 +414,7 @@ function openLocation(location) {
 
 function sharePhotos() {
     // Ejemplo: aquí se debe colocar el enlace real a la carpeta de Google Drive.
-    // window.open('https://drive.google.com/...', '_blank');
-    showToast("Comparte tus fotos", "Aquí irá el enlace a la carpeta de Google Drive para subir tus fotos (ejemplo).");
+    window.open('https://photos.app.goo.gl/p9PGQHWrvLG1Bpj28', '_blank');
 }
 
 function showDressCode() {
@@ -435,14 +434,12 @@ function closeDressCodeModal() {
 }
 
 function showGifts() {
-    // Ejemplo: aquí se debe colocar el enlace real (lista de regalos, cuenta, etc.).
-    showToast("Regalos", "Aquí irá el enlace o la información de regalos (ejemplo).");
+    window.open('https://cuentapro11.github.io/numero-cuenta-ejemplo/', '_blank');
 }
 
 function confirmAttendance() {
     // Ejemplo: aquí se debe colocar el enlace real al formulario de Google Forms.
-    // window.open('https://forms.google.com/...', '_blank');
-    showToast("Confirmar asistencia", "Aquí irá el enlace a tu formulario de Google Forms (ejemplo).");
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdIYoM33yAkMmS4DZCRVmO9_IE0gZT4eEw8cV0r2PgWlYE0Ag/viewform?usp=header', '_blank');
 }
 
 // Sistema de Toast
